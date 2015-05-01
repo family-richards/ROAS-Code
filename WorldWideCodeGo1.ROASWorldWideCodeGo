@@ -1,2 +1,8 @@
-ROAS() {
+ROAS(WorldWide,CodeGo,repo) {
+repo() {
+WorldWide(CodeGo,repo) {
 #include Code1CodeGo.ROASCodeGo
+}
+CodeGo(repo) {
+WorldWide();
+}
