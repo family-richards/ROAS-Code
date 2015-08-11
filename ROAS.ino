@@ -1,6 +1,6 @@
 #include "ROASArdLib.h"
 
-ROASArdLib roaslib = ROASArdLib;
+ROASArdLib roaslib;
 
 ROASSetupInfo() {
 const String ROASVersion = "MOST_RECENT_ROAS_VERSION";
@@ -11,7 +11,7 @@ const char PinsToUseMode[14] = {OUTPUT, OUTPUT, OUTPUT, INPUT, OUTPUT, INPUT, OU
 }
 
 void setup() {
-roaslib.begin(roaslib);
+roaslib.ROASBegin();
 roaslib.beginsetup();
 for (int i = 0; i < 14; i++) {
 pinMode(PinsToUseNum[i], PinsToUseMode[i]);
